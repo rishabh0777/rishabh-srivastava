@@ -3,7 +3,7 @@ import Nav from "./components/Nav"
 
 const App = () => {
   return (
-    <main className="xsm:w-full xsm:min-h-screen relative">
+    <main className="xsm:w-full xsm:min-h-[100svh] relative">
       <Nav />
       <Hero />
     </main>
