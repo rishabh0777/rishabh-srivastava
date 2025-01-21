@@ -17,7 +17,7 @@ const Nav = () => {
   
   return (
     <>
-    <nav ref={navRef} className="xsm:w-full xsm:h-[100svh] bg-white text-zinc-900 font-poppins overflow-y-hidden fixed top-0 left-[100%] z-50 shadow-md shadow-black">
+    <nav ref={navRef} className="overflow-hidden xsm:w-full xsm:h-[100svh] bg-white text-zinc-900 font-poppins overflow-y-hidden fixed top-0 left-[100%] z-50 shadow-md shadow-black">
         <div className="w-full h-[10svh] text-3xl flex items-center px-5">
         <i onClick={toggleNav} className="ri-close-line"></i>
         </div>

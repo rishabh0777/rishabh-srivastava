@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Adjust spacing for Swiper slides */
+.mySwiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+  }
+  .swiper-slide {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  
+  /* Project card styling adjustments within the slider */
+  .project-card {
+    max-width: 90%;
+    margin: auto;
+  }
+
+ /* Target bullets with specificity */
+.swiper-container .swiper-pagination-bullet {
+  background: #6b7280 !important; /* Use !important if needed */
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background: #ffffff !important; /* Use !important to override Swiper's styles */
+  width: 12px;
+  height: 12px;
+  transform: scale(1.2);
+}
+
+  
