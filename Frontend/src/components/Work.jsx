@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import ProjectCard from "./ProjectCard";
 import ishaniaqua from "../assets/images/ishaniaqua.webp";
 import spicesaga from "../assets/images/spicesaga.webp";
-import techvista from "../assets/images/techvista.webp";
 import atmos from "../assets/images/atmos.webp";
 
 const Work = () => {
@@ -28,11 +27,7 @@ const Work = () => {
       description: "A weather app with real-time data and dynamic visuals, showcasing API integration and minimalistic design.",
       img: atmos,
     },
-    {
-      title: "Techvista",
-      description: "A sleek e-commerce platform for tech enthusiasts, featuring responsive design, advanced filtering, and seamless navigation.",
-      img: techvista,
-    },
+   
   ];
 
   return (
@@ -66,7 +61,7 @@ const Work = () => {
           768: { slidesPerView: 2, spaceBetween: 20 },
           1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
-        className="mySwiper w-full p-4 rounded-lg.swiper-pagination-bullet .swiper-pagination-bullet-active rounded-xl shadow-md mt-10"
+        className="mySwiper w-full p-4 bg-zinc-900 rounded-lg.swiper-pagination-bullet .swiper-pagination-bullet-active rounded-xl shadow-md mt-10"
       >
         {
           projects.map((project, index) => (
