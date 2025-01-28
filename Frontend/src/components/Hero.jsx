@@ -59,18 +59,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="xsm:w-full h-[100svh] relative px-4 flex justify-center text-zinc-900">
-      <h1 ref={heroTextRef} className="text-[15vw] z-[10] tracking-wide text-black font-poppins absolute top-[30%]">
+    <div className="xsm:w-full h-[100svh] relative xsm:px-4 md:px-8 flex justify-center text-zinc-900">
+      <h1 ref={heroTextRef} className="xsm:text-[15vw] md:text-[9vw] z-[10] tracking-wide text-black font-poppins absolute xsm:top-[30%] md:top-[29%]">
         {txtArr[currentTextIndex]}
       </h1>
       <p
         ref={paraRef}
-        className="text-[4vw] tracking-wide z-[11] text-center text-zinc-900 font-inter absolute top-[45%]"
+        className="xsm:text-[4vw] md:text-[1.4vw] xsm:tracking-wide md:tracking-wider tracking-wider z-[11] text-center text-zinc-900 font-inter absolute xsm:top-[45%] md:top-[55%] md:mt-4"
       >
         Turning ideas into stunning, interactive <br /> web solutions.
       </p>
-      <div className="xsm:w-full xsm:h-[10svh] absolute bottom-[13svh] flex justify-between items-center p-4 text-2xl font-poppins">
-        <i ref={scrollIconRef} className="ri-arrow-down-line text-3xl"></i>
+      <div className="xsm:w-full xsm:h-[10svh] absolute bottom-[13svh] flex justify-between items-center xsm:p-4 p-4 md:px-10 xsm:text-2xl md:text-lg font-poppins">
+        <i ref={scrollIconRef} className="ri-arrow-down-line xsm:text-3xl"></i>
         <h3 ref={scrollTextRef}>ScrollDown</h3>
       </div>
     </div>

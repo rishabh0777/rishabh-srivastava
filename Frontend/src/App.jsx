@@ -3,7 +3,6 @@ import Nav from "./components/Nav"
 import Skill from "./components/Skill"
 import Work from "./components/Work"
 import About from "./components/About"
-import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
 const App = () => {
@@ -14,7 +13,7 @@ const App = () => {
       <Skill />
       <Work />
       <About />
-      <Contact />
+
       <Footer />
     </main>
   )

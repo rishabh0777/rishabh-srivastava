@@ -1,59 +1,51 @@
-import { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
+import React from 'react'
 
 const Footer = () => {
-  const footerRef = useRef(null);
-
-  useEffect(() => {
-    // Animation for footer elements
-    gsap.fromTo(
-      footerRef.current,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power4.out' }
-    );
-  }, []);
-
   return (
-    <footer
-      ref={footerRef}
-      className="xsm:w-full bg-zinc-900 text-zinc-200 py-6 px-4 flex flex-col items-center gap-4 text-center"
-    >
-      <h2 className="text-2xl font-poppins font-semibold">Connect with Me</h2>
-      <div className="flex gap-6">
-        <a
-          href="https://github.com/rishabh0777"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          <i className="ri-github-fill text-3xl"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rishabh-srivastava-1b17461b0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          <i className="ri-linkedin-fill text-3xl"></i>
-        </a>
-        <a
-          href="mailto:your-email@example.com"
-          className="hover:text-white transition"
-        >
-          <i className="ri-mail-fill text-3xl"></i>
-        </a>
+    <div className='xsm:w-full h-[100svh] relative px-4 flex text-zinc-900 flex-col'>
+      <h1 className='font-poppins text-[9vw] mt-14 tracking-widest font-medium'>GET IN TOUCH</h1>
+      <a
+        className='mt-8 font-poppins text-[4vw] flex gap-1 font-medium tracking-wider text-zinc-600 justify-center items-center'
+        href="mailto:rishabhsrivastava7777@gmail.com?subject=Contact%20Request&body=Hi%20Rishabh,%20I%20would%20like%20to%20connect%20with%20you."
+        target="_blank"
+      >
+        <i className="ri-mail-send-line text-zinc-900 text-[5vw]"></i>
+        rishabhsrivastava7777@gmail.com
+      </a>
+      <h2 className='mt-12 font-poppins text-[9vw] font-medium tracking-wider text-zinc-900'>Connect with <br /> Social</h2>
+      <div className='w-full flex flex-col gap-8 mt-8 p-4 text-[5vw]'>
+      <div className='flex gap-4 border-b-2 border-zinc-500 justify-between'>
+      <h3 className='flex gap-1'>
+      <i class="ri-github-fill"></i>
+        Github</h3>
+        <i class="ri-arrow-right-up-line"></i>
       </div>
-      <p className="text-sm text-zinc-400 font-inter">
+      <div className='flex gap-4 border-b-2 border-zinc-500 justify-between'>
+      <h3 className='flex gap-1'>
+      <i class="ri-linkedin-box-fill"></i>
+        Linkedin</h3>
+        <i class="ri-arrow-right-up-line"></i>
+      </div>
+      <div className='flex gap-4 border-b-2 border-zinc-500 justify-between'>
+      <h3 className='flex gap-1'>
+      <i class="ri-instagram-fill"></i>
+        Instagram</h3>
+        <i class="ri-arrow-right-up-line"></i>
+      </div>
+      </div>
+      <div className="text-[3vw] text-zinc-700 font-inter absolute bottom-5 left-0 px-4 flex justify-between w-full items-center">
+      <p>
         &copy; {new Date().getFullYear()} Rishabh Srivastava. All rights reserved.
       </p>
-      <button
-        className="bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded-lg font-poppins transition text-sm mt-4"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      >
-        Back to Top
-      </button>
-    </footer>
-  );
-};
+      <div 
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className='text-[8vw] w-[10vw] h-[10vw] bg-zinc-700 rounded-full flex justify-center items-center text-white'>
+      <i class="ri-arrow-up-line"></i>
+      </div>
+      </div>
 
-export default Footer;
+    </div>
+  )
+}
+
+export default Footer
