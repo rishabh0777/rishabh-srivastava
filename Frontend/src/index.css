@@ -36,4 +36,21 @@
   transform: scale(1.2);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar-thumb{
+  display: none;
+  background-color: #ffffff;
+}
   
+body{
+  font-family: inter, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: poppins, sans-serif;
+}

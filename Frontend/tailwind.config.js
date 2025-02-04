@@ -5,15 +5,17 @@ export default {
     extend: {
       screens: {
         'xsm': '320px',
-        'sm': '480px',
-        'md': '768px',
-        'lg': '1024px',
+        'sm': '573px',
+        'tab': '650px',
+        'md': '1024px',
+        'lg': '1100px',
         'xl': '1280px',
         '2xl': '1536px',
       }, 
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        playflair: ['Playfair Display', 'serif']
       },
       fontWeight: {
         'hairline': 100,
