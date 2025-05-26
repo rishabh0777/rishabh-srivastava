@@ -9,7 +9,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import ProjectCard from "./ProjectCard";
-import ishaniaqua from "../assets/images/ishaniaqua.webp";
 import spicesaga from "../assets/images/spicesaga.webp";
 import atmos from "../assets/images/atmos.webp";
 
@@ -25,12 +24,7 @@ const Work = () => {
 
 
   const projects = [
-    {
-      title: "Ishani Aqua Mineral Water",
-      description: "A modern website showcasing a premium bottled water brand, featuring sleek design, product highlights, and an emphasis on purity and quality.",
-      img: ishaniaqua,
-      link: "https://ishaniaqua.netlify.app", // Replace with actual URL
-    },
+    
     {
       title: "Spicesaga",
       description: "A recipe-sharing platform with vibrant design and intuitive navigation, connecting food lovers with unique recipes.",
