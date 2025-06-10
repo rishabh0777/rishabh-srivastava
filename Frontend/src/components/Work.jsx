@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectCard from "./ProjectCard";
 import spicesaga from "../assets/images/spicesaga.webp";
 import atmos from "../assets/images/atmos.webp";
+import webli from "../assets/images/webli.png"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -24,7 +25,12 @@ const Work = () => {
 
 
   const projects = [
-    
+    {
+      title: "Webli",
+      description: "A full-stack web development agency site showcasing dynamic animations, modern UI, and scalable pricing plans. Designed to attract clients and present services with clarity and flair.",
+      img: webli,
+      link: "https://webli.vercel.app",
+    },
     {
       title: "Spicesaga",
       description: "A recipe-sharing platform with vibrant design and intuitive navigation, connecting food lovers with unique recipes.",
@@ -36,9 +42,9 @@ const Work = () => {
       description: "A weather app with real-time data and dynamic visuals, showcasing API integration and minimalistic design.",
       img: atmos,
       link: "https://rishabh0777.github.io/Atmos/", // Replace with actual URL
-    },
+    }
   ];
-  
+
 
   useEffect(() => {
     const mm = gsap.matchMedia();
@@ -96,9 +102,9 @@ const Work = () => {
         y: -50,
         opacity: 0,
         duration: 1,
-    })
-    gsap.from(paraRef.current, {
-        scrollTrigger:{
+      })
+      gsap.from(paraRef.current, {
+        scrollTrigger: {
           trigger: paraRef.current,
           start: "top 80%",
           end: "top 60%",
@@ -108,9 +114,9 @@ const Work = () => {
         y: 50,
         opacity: 0,
         duration: 1,
-    })
-    gsap.from(projRef.current, {
-        scrollTrigger:{
+      })
+      gsap.from(projRef.current, {
+        scrollTrigger: {
           trigger: projRef.current,
           start: "top 80%",
           end: "top 60%",
@@ -119,8 +125,9 @@ const Work = () => {
         },
         y: 100,
         opacity: 0,
-        duration: 1,})
-  })
+        duration: 1,
+      })
+    })
 
 
 

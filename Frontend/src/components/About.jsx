@@ -115,7 +115,7 @@ With a strong focus on bridging design and functionality, I strive to create hig
      
       gsap.fromTo(
         "#para span",
-        { opacity:0, y: '200'},
+        { opacity:0, y: '100'},
         {
           opacity:1,
           y:0,
